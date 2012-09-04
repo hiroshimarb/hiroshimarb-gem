@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["eiel.hal@gmail.com"]
   gem.description   = %q{provide `hiroshimarb` command. hiroshimarb is Hiroshima.rb. Hiroshima.rb is local community of Ruby in Hiroshima/Japan}
   gem.summary       = %q{provide `hiroshimarb` command. hiroshimarb is Hiroshima.rb}
-  gem.homepage      = "http://hiroshimarb.github.com"
+  gem.homepage      = "http://github.com/hiroshimarb/hiroshimarb-gem"
   gem.rubyforge_project = 'github'
 
   gem.files         = `git ls-files`.split($\)
