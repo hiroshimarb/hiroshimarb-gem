@@ -7,6 +7,7 @@ Hiroshimarb::Member.define do
     website 'http://eiel.info/'
     profile 'Hiroshima.rb の会場確保係'
   end
+
   member do
     name 'KITADAI, Yukinori'
     github 'Nyoho'
