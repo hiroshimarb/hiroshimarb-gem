@@ -1,3 +1,4 @@
+require 'hiroshimarb/member'
 require 'rubygems'
 require 'launchy'
 
@@ -16,7 +17,11 @@ module Hiroshimarb
 
     # Hiroshima.rbのメンバーを標準出力へ表示
     def member
-      help
+      Member.all.reduce(nil) do |acc, member|
+        puts acc if acc
+        puts member.to_s
+        acc = '-'*80
+      end
     end
 
     def help

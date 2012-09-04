@@ -19,7 +19,14 @@ describe Hiroshimarb::CLI do
   end
 
   describe '#member' do
-    it 'Hiroshim.rbのメンバーを出力'
+    subject { cli.member }
+    it 'Hiroshim.rbのメンバーを出力' do
+      Hiroshimarb::Member.stub(:all) { %W{hoge mogu}  }
+      $stdout = StringIO.new
+      subject
+      $stdout.seek 0
+      expect($stdout.read).to eq("hoge\n" + '-'*80 + "\nmogu\n")
+    end
   end
 
   describe '#help' do
