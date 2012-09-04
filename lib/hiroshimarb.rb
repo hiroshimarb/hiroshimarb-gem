@@ -1,18 +1,21 @@
 require "hiroshimarb/version"
+require 'hiroshimarb/cli'
 require 'rubygems'
 require 'launchy'
 
 module Hiroshimarb
+  extend CLI
+
   class << self
     def execute(argv)
-      if argv.first == 'open'
-        Launchy.open 'http://hiroshimarb.github.com'
+      return help if argv.count == 0
+
+      command = argv.shift
+      case command
+      when 'open'
+        open
       else
-        puts <<EOD
-Usage: hiroshimarb command
-Available commands:
-  open    : open the Hiroshima.rb website in a web browser
-EOD
+        help
       end
     end
   end
