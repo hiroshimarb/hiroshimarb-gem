@@ -14,6 +14,10 @@ module Hiroshimarb
       case command
       when 'open'
         open
+      when 'info'
+        info
+      when 'member'
+        member
       else
         help
       end
