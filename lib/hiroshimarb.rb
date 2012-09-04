@@ -1,7 +1,5 @@
 require "hiroshimarb/version"
 require 'hiroshimarb/cli'
-require 'rubygems'
-require 'launchy'
 
 module Hiroshimarb
   extend CLI

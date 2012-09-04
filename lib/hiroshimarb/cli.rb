@@ -1,3 +1,6 @@
+require 'rubygems'
+require 'launchy'
+
 module Hiroshimarb
   # コマンドラインから呼びだされる場合のサブコマンドを実装する
   module CLI
