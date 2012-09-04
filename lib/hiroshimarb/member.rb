@@ -1,9 +1,23 @@
 # -*- coding: utf-8 -*-
 module Hiroshimarb
   # メンバーを表現すくクラス
+  autoload "DSL", 'hiroshimarb/dsl'
   class Member
     class << self
       def all
+        @members ||= load
+      end
+
+      def load
+        relative_path = "..","..","resource","member.rb"
+        resource_file = File.join(File.dirname(__FILE__), relative_path)
+        # resource の中で Mmeber.define が呼ばれる
+        require resource_file
+        @members
+      end
+
+      def define(&block)
+        @members = DSL.new.instance_exec &block
       end
     end
 
