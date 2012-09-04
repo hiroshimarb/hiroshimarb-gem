@@ -13,4 +13,16 @@ describe Hiroshimarb::CLI do
       subject
     end
   end
+
+  describe '#info' do
+    it 'Hiroshim.rbの情報を出力'
+  end
+
+  describe '#member' do
+    it 'Hiroshim.rbのメンバーを出力'
+  end
+
+  describe '#help' do
+    it '使い方を出力'
+  end
 end
