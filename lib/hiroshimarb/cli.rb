@@ -19,7 +19,7 @@ module Hiroshimarb
       help
     end
 
-    def Help
+    def help
         puts <<EOD
 Usage: hiroshimarb command
 Available commands:
