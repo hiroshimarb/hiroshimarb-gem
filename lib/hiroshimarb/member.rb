@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 module Hiroshimarb
-  # メンバーを表現すくクラス
+  # メンバーを表現するクラス
   autoload "DSL", 'hiroshimarb/dsl'
   class Member
     class << self
@@ -11,7 +11,7 @@ module Hiroshimarb
       def load
         relative_path = "..","..","resource","member.rb"
         resource_file = File.join(File.dirname(__FILE__), relative_path)
-        # resource の中で Mmeber.define が呼ばれる
+        # resource の中で Member.define が呼ばれる
         require resource_file
         @members
       end
