@@ -5,7 +5,7 @@ module Hiroshimarb
   describe Member do
     describe '.all' do
       subject { Member.all }
-      it { should have(2).items }
+      it { should have(3).items }
     end
 
     describe '#to_s' do
