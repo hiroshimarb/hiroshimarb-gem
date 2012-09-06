@@ -29,6 +29,7 @@ module Hiroshimarb
 Usage: hiroshimarb command
 Available commands:
   open    : open the Hiroshima.rb website in a web browser
+  member  : display the member of Hiroshima.rb
 EOD
     end
   end
