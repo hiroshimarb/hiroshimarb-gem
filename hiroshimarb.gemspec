@@ -17,4 +17,6 @@ Gem::Specification.new do |gem|
   gem.version       = Hiroshimarb::VERSION
 
   gem.add_dependency "launchy", "~> 2.1.2"
+
+  gem.add_development_dependency "rspec", "~> 2.11"
 end
