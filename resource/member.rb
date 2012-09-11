@@ -23,4 +23,12 @@ Hiroshimarb::Member.define do
     website 'http://lambda.io/jmettraux'
     profile 'スイス人、チーズがすき'
   end
+
+  member do
+    name 'Akira345'
+    github 'akira345'
+    twitter 'akira345'
+    website 'http://akira-junkbox.blogspot.com'
+    profile 'Hiroshima.rbで会長を困らせる係。最近WindowsPhomeに浮気気味な趣味人。ハード好き。'
+  end
 end
