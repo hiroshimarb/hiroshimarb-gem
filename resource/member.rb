@@ -29,6 +29,14 @@ Hiroshimarb::Member.define do
     github 'akira345'
     twitter 'akira345'
     website 'http://akira-junkbox.blogspot.com'
-    profile 'Hiroshima.rbで会長を困らせる係。最近WindowsPhomeに浮気気味な趣味人。ハード好き。'
+    profile 'Hiroshima.rbで会長を困らせる係。最近WindowsPhoneに浮気気味な趣味人。ハード好き。'
+  end
+
+  member do
+    name 'Tatsuya Furukido'
+    github 'furu'
+    twitter 'pecosantoyobe'
+    website 'example.com'
+    profile 'hi'
   end
 end
