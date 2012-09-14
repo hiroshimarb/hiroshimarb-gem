@@ -39,4 +39,12 @@ Hiroshimarb::Member.define do
     website 'example.com'
     profile 'hi'
   end
+
+  member do
+    name 'Takashi Akagi'
+    github 'majosystems'
+    twitter 'majosystems'
+    website 'http://majosystems.com'
+    profile 'なかなか参加できてませんが・・・勉強中です'
+  end
 end
