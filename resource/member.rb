@@ -55,4 +55,13 @@ Hiroshimarb::Member.define do
     website 'http://majosystems.com'
     profile 'なかなか参加できてませんが・・・勉強中です'
   end
+  
+  member do
+    name 'Hidetoshi Kawaguchi'
+    github 'nill'
+    twitter 'thethe3i9t'
+    website 'nill'
+    profile '勉強中・・・'
+  end
+  
 end
