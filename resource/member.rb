@@ -5,7 +5,7 @@ Hiroshimarb::Member.define do
     github 'eiel'
     twitter 'eielh'
     website 'http://eiel.info/'
-    profile 'Hiroshima.rb の会場確保係'
+    profile 'Hiroshima.rb の会場確保係。会長ではない。'
   end
 
   member do
