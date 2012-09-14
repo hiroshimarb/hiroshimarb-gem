@@ -39,4 +39,12 @@ Hiroshimarb::Member.define do
     website 'example.com'
     profile 'hi'
   end
+
+  member do
+    name 'Takanobu Kamada'
+    github 'kama-t'
+    twitter 'nill'
+    website 'example.com'
+    profile 'hi'
+  end
 end
