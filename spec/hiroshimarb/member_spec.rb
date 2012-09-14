@@ -5,7 +5,9 @@ module Hiroshimarb
   describe Member do
     describe '.all' do
       subject { Member.all }
-      it { should have(5).items }
+      it "1件以上のデータがある" do
+        expect(subject.count).to be > 1
+      end
     end
 
     describe '#to_s' do
