@@ -72,4 +72,12 @@ Hiroshimarb::Member.define do
     profile 'たまにもくもくしに参加してます。Rubyは使ったことがない初心者です・・・。'
   end
   
+  member do
+    name 'Tomohiro Morishita'
+    github 'moriC'
+    twitter ''
+    website ''
+    profile 'よろしくお願いします'
+  end
+  
 end
