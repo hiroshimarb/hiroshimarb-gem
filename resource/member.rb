@@ -64,4 +64,12 @@ Hiroshimarb::Member.define do
     profile '勉強中・・・'
   end
   
+  member do
+    name 'Kazuya Matsubara'
+    github 'Torokun'
+    twitter 'Toro_kun'
+    website 'http://switch.dip.jp/toro/blog/'
+    profile 'たまにもくもくしに参加してます。Rubyは使ったことがない初心者です・・・。'
+  end
+  
 end
