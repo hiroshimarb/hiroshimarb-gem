@@ -75,7 +75,7 @@ Hiroshimarb::Member.define do
   member do
     name 'Tomohiro Morishita'
     github 'moriC'
-    twitter ''
+    twitter 'tomohiro_0219'
     website ''
     profile 'よろしくお願いします'
   end
