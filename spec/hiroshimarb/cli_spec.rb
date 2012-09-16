@@ -20,7 +20,7 @@ describe Hiroshimarb::CLI do
     context '引数 "oc-h"' do
       let(:arg) { "oc-h" }
       it "おしい広島県のウェブサイトを表示" do
-        Launchy.should_receive(:open).with('http://oc-h.jp/')
+        Launchy.should_receive(:open).with('http://oc-h.jp')
         subject
       end
     end

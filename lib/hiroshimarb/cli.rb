@@ -6,8 +6,15 @@ module Hiroshimarb
   # コマンドラインから呼びだされる場合のサブコマンドを実装する
   module CLI
     # Hiroshim.rbのウェブサイトをブラウザで開く
-    def open
-      Launchy.open 'http://hiroshimarb.github.com'
+    def open(key = nil)
+      key ||= 'hiroshimarb'
+      url = case key
+            when 'hiroshimarb'
+              'http://hiroshimarb.github.com'
+            when 'oc-h'
+              'http://oc-h.jp'
+            end
+      Launchy.open url
     end
 
     # Hiroshim.rbの情報を標準出力へ表示
