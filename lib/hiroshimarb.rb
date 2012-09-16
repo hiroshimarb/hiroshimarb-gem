@@ -11,7 +11,7 @@ module Hiroshimarb
       command = argv.shift
       case command
       when 'open'
-        open
+        open *argv
       when 'info'
         info
       when 'member'
