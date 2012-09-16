@@ -7,10 +7,22 @@ describe Hiroshimarb::CLI do
   end
 
   describe '#open' do
-    subject { cli.open }
-    it "Hiroshima.rbのウェブサイトを表示" do
-      Launchy.should_receive(:open).with('http://hiroshimarb.github.com')
-      subject
+    subject { cli.open(arg) }
+
+    context '引数なし' do
+      let(:arg) { nil }
+      it "Hiroshima.rbのウェブサイトを表示" do
+        Launchy.should_receive(:open).with('http://hiroshimarb.github.com')
+        subject
+      end
+    end
+
+    context '引数 "oc-h"' do
+      let(:arg) { "oc-h" }
+      it "おしい広島県のウェブサイトを表示" do
+        Launchy.should_receive(:open).with('http://oc-h.jp/')
+        subject
+      end
     end
   end
 
