@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require 'hiroshimarb/member'
 require 'rubygems'
 require 'launchy'
@@ -35,7 +36,10 @@ module Hiroshimarb
         puts <<EOD
 Usage: hiroshimarb command
 Available commands:
-  open    : open the Hiroshima.rb website in a web browser
+  open    : open the website relevant to Hiroshima in a web browser
+          : subcommands
+          :    hiroshimarb - Hiroshim.rb [default]
+          :    oc-h        - おしい広島県
   member  : display the member of Hiroshima.rb
 EOD
     end
