@@ -10,7 +10,14 @@
 
 ## Usage
 
+### user コマンド
 
     $ hiroshimarb open
 
 ブラウザで Hiroshima.rb のウェブサイトを表示します。
+
+### member コマンド
+
+    $ hiroshimarb member
+
+Hiroshima.rb のメンバー一覧を表示します。
