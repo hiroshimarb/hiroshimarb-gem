@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
-require File.expand_path('../lib/hiroshimarb/version', __FILE__)
+$LOAD_PATH << File.expand_path('../lib', __FILE__)
+require 'hiroshimarb/version'
+require 'hiroshimarb/member'
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Tomohiko Himura"]
+  gem.authors       = Hiroshimarb::Member.all.map(&:name)
   gem.email         = ["eiel.hal@gmail.com"]
   gem.description   = %q{provide `hiroshimarb` command. hiroshimarb is Hiroshima.rb. Hiroshima.rb is local community of Ruby in Hiroshima/Japan}
   gem.summary       = %q{provide `hiroshimarb` command. hiroshimarb is Hiroshima.rb}
