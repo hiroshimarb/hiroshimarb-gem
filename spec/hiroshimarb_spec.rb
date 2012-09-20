@@ -5,10 +5,10 @@ describe Hiroshimarb do
   describe '.execute' do
     subject { Hiroshimarb.execute argv }
     context "when 第1引数が 'open'" do
-      let(:argv) { ['open'] }
+      let(:argv) { ['open', 'hiroshimarb'] }
 
       it "open メソッドが呼ばれる" do
-        Hiroshimarb.should_receive(:open)
+        Hiroshimarb.should_receive(:open).with('hiroshimarb')
         subject
       end
     end

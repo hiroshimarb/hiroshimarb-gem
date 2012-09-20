@@ -10,11 +10,23 @@
 
 ## Usage
 
-### user コマンド
+### open コマンド
 
     $ hiroshimarb open
 
 ブラウザで Hiroshima.rb のウェブサイトを表示します。
+
+`open` コマンドにはサブコマンドが用意されていて、指定するサブコマンドによって開くサイトが変化します。
+用意されているサブコマンドは以下の通りです。
+
+<table>
+    <tr>
+        <td>hiroshimarb</td><td>Hiroshima.rb</td>
+    </tr>
+    <tr>
+        <td>oc-h</td><td>おしい広島県</td>
+    </tr>
+</table>
 
 ### member コマンド
 
