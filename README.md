@@ -1,4 +1,4 @@
-# Hiroshima.rb
+# Hiroshima.rb [![Build Status](https://secure.travis-ci.org/hiroshimarb/hiroshimarb-gem.png)](http://travis-ci.org/hiroshimarb/hiroshimarb-gem)
 
 この gem は Hiroshima.rb が提供する gem です。
 基本的にネタです。
