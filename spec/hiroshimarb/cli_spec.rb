@@ -42,6 +42,12 @@ describe Hiroshimarb::CLI do
   end
 
   describe '#help' do
-    it '使い方を出力'
+    subject { cli.help }
+    it '使い方を出力' do
+      $stdout = StringIO.new
+      subject
+      $stdout.seek 0
+      expect($stdout.read).to match("Usage")
+    end
   end
 end
