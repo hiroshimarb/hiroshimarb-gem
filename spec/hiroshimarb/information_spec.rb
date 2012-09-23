@@ -6,8 +6,12 @@ module Hiroshimarb
     describe '.information' do
       subject { Information.information }
 
-      it "Hiroshima.rbについての情報を返す" do
+      it "Hiroshima.rbについて" do
         should match("Hiroshima.rb")
+      end
+
+      it "イベントの日程" do
+        should match("毎月第一土曜日")
       end
     end
 
