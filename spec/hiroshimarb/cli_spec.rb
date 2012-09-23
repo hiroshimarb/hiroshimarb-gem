@@ -36,7 +36,16 @@ describe Hiroshimarb::CLI do
   end
 
   describe '#info' do
-    it 'Hiroshim.rbの情報を出力'
+    subject { cli.info }
+    it "Hiroshima.rbについて出力される" do
+      subject
+      expect(stdout).to match("Hiroshima.rbについて")
+    end
+
+    it "イベントについて出力される" do
+      subject
+      expect(stdout).to match("勉強会やもくもくする会")
+    end
   end
 
   describe '#member' do
