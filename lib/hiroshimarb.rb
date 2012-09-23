@@ -4,6 +4,8 @@ require 'hiroshimarb/cli'
 module Hiroshimarb
   extend CLI
 
+  autoload(:Information, "hiroshimarb/information")
+
   class << self
     def execute(argv)
       return help if argv.count == 0
