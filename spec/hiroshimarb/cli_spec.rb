@@ -6,6 +6,15 @@ describe Hiroshimarb::CLI do
     Object.new.extend Hiroshimarb::CLI
   end
 
+  let(:stdout) do
+    $stdout.seek 0
+    $stdout.read
+  end
+
+  before :each do
+    $stdout = StringIO.new
+  end
+
   describe '#open' do
     subject { cli.open(arg) }
 
@@ -34,14 +43,16 @@ describe Hiroshimarb::CLI do
     subject { cli.member }
     it 'Hiroshim.rbのメンバーを出力' do
       Hiroshimarb::Member.stub(:all) { %W{hoge mogu}  }
-      $stdout = StringIO.new
       subject
-      $stdout.seek 0
-      expect($stdout.read).to eq("hoge\n" + '-'*80 + "\nmogu\n")
+      expect(stdout).to eq("hoge\n" + '-'*80 + "\nmogu\n")
     end
   end
 
   describe '#help' do
-    it '使い方を出力'
+    subject { cli.help }
+    it '使い方を出力' do
+      subject
+      expect(stdout).to match("Usage")
+    end
   end
 end
