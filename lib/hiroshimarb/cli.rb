@@ -20,7 +20,7 @@ module Hiroshimarb
 
     # Hiroshim.rbの情報を標準出力へ表示
     def info
-      help
+      puts Information.information
     end
 
     # Hiroshima.rbのメンバーを標準出力へ表示

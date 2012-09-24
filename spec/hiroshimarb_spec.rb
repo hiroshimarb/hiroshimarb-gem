@@ -40,4 +40,9 @@ describe Hiroshimarb do
       end
     end
   end
+
+  describe "Infomation" do
+    subject { Hiroshimarb::Information }
+    its(:class) { should eq(Class) }
+  end
 end
