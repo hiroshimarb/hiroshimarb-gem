@@ -40,6 +40,7 @@ Available commands:
           : subcommands
           :    hiroshimarb - Hiroshim.rb [default]
           :    oc-h        - おしい広島県
+  info    : disploy information of Hiroshimar.rb
   member  : display the member of Hiroshima.rb
 EOD
     end
