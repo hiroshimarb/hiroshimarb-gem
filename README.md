@@ -33,3 +33,9 @@
     $ hiroshimarb member
 
 Hiroshima.rb のメンバー一覧を表示します。
+
+### info コマンド
+
+    $ hiroshimarb info
+
+Hiroshima.rb についての情報を表示します。
