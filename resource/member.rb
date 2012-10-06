@@ -80,4 +80,12 @@ Hiroshimarb::Member.define do
     profile 'よろしくお願いします'
   end
   
+  member do
+    name 'Tomokazu Ogawa'
+    github 'ogatomo'
+    twitter 'ogatomo'
+    website ''
+    profile 'Ruby勉強中です。よろしくお願いします。'
+  end
+  
 end
