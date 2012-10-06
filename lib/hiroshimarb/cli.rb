@@ -46,7 +46,10 @@ Available commands:
   open    : open the website relevant to Hiroshima in a web browser
           : subcommands
           :    hiroshimarb - Hiroshim.rb [default]
+          :    ipad        - 広島弁吹替シリーズ
           :    oc-h        - おしい広島県
+          :    city        - 広島市
+          :    pref        - 広島県
   info    : disploy information of Hiroshimar.rb
   member  : display the member of Hiroshima.rb
 EOD

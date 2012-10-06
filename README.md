@@ -24,7 +24,16 @@
         <td>hiroshimarb</td><td>Hiroshima.rb</td>
     </tr>
     <tr>
+        <td>ipad</td><td>広島弁吹替シリーズ</td>
+    </tr>
+    <tr>
         <td>oc-h</td><td>おしい広島県</td>
+    </tr>
+    <tr>
+        <td>city</td><td>広島市</td>
+    </tr>
+    <tr>
+        <td>pref</td><td>広島県</td>
     </tr>
 </table>
 
