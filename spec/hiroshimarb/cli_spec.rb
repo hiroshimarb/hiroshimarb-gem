@@ -37,7 +37,7 @@ describe Hiroshimarb::CLI do
     context '引数 "ipad"' do
       let(:arg) { "ipad" }
       it "広島弁吹替シリーズのサイトを表示" do
-        Launchy.should_receive(:open).with('http://kita.dyndns.org/wiki/?%E5%BA%83%E5%B3%B6%E5%BC%81%E5%90%B9%E6%9B%BF%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA')
+        Launchy.should_receive(:open).with('http://kita.dyndns.org/wiki/?%E5%BA%83%E5%B3%B6%E5%BC%81%E5%90%B9%E3%81%8D%E6%9B%BF%E3%81%88%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA')
         subject
       end
     end

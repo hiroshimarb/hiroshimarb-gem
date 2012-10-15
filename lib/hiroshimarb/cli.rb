@@ -16,7 +16,7 @@ module Hiroshimarb
             when 'oc-h'
               'http://oc-h.jp'
             when 'ipad'
-              URI.encode 'http://kita.dyndns.org/wiki/?広島弁吹替シリーズ'
+              URI.encode 'http://kita.dyndns.org/wiki/?広島弁吹き替えシリーズ'
             when 'city'
               'http://www.city.hiroshima.lg.jp'
             when 'pref'
