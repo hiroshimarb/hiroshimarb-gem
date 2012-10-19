@@ -48,3 +48,9 @@ Hiroshima.rb のメンバー一覧を表示します。
     $ hiroshimarb info
 
 Hiroshima.rb についての情報を表示します。
+
+### event コマンド
+
+    $ hiroshimarb event
+
+Hiroshima.rb の次回のイベントについての情報を表示します。

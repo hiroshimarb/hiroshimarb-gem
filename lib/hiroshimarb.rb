@@ -18,6 +18,8 @@ module Hiroshimarb
         info
       when 'member'
         member
+      when 'event'
+        event
       else
         help
       end

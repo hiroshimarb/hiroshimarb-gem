@@ -39,6 +39,16 @@ module Hiroshimarb
       end
     end
 
+    # Hiroshima.rbのイベントを標準出力へ表示
+    def event
+      puts <<EOD
+2012-11-03 (土) 14:00-18:00 広島Ruby勉強会 #025
+
+  http://hiroshimarb.github.com/blog/2012/10/15/hiroshimarb-25/
+
+EOD
+    end
+
     def help
         puts <<EOD
 Usage: hiroshimarb command
@@ -52,6 +62,7 @@ Available commands:
           :    pref        - 広島県
   info    : disploy information of Hiroshimar.rb
   member  : display the member of Hiroshima.rb
+  event   : display next event of Hiroshima.rb
 EOD
     end
   end
