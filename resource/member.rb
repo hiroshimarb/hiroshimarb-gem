@@ -55,7 +55,7 @@ Hiroshimarb::Member.define do
     website 'http://majosystems.com'
     profile 'なかなか参加できてませんが・・・勉強中です'
   end
-  
+
   member do
     name 'Hidetoshi Kawaguchi'
     github 'nill'
@@ -63,7 +63,7 @@ Hiroshimarb::Member.define do
     website 'nill'
     profile '勉強中・・・'
   end
-  
+
   member do
     name 'Kazuya Matsubara'
     github 'Torokun'
@@ -71,7 +71,7 @@ Hiroshimarb::Member.define do
     website 'http://switch.dip.jp/toro/blog/'
     profile 'たまにもくもくしに参加してます。Rubyは使ったことがない初心者です・・・。'
   end
-  
+
   member do
     name 'Tomohiro Morishita'
     github 'moriC'
@@ -79,7 +79,7 @@ Hiroshimarb::Member.define do
     website ''
     profile 'よろしくお願いします'
   end
-  
+
   member do
     name 'Tomokazu Ogawa'
     github 'ogatomo'
@@ -87,5 +87,5 @@ Hiroshimarb::Member.define do
     website ''
     profile 'Ruby勉強中です。よろしくお願いします。'
   end
-  
+
 end
