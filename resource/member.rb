@@ -88,4 +88,12 @@ Hiroshimarb::Member.define do
     profile 'Ruby勉強中です。よろしくお願いします。'
   end
 
+  member do
+    name 'Kakenavi'
+    github 'kakenavi'
+    twitter 'kakenavi'
+    website 'http://kakenavi.blog.fc2.com/'
+    profile ''
+  end
+
 end
