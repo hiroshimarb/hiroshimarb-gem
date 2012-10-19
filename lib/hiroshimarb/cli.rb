@@ -62,6 +62,7 @@ Available commands:
           :    pref        - 広島県
   info    : disploy information of Hiroshimar.rb
   member  : display the member of Hiroshima.rb
+  event   : display next event of Hiroshima.rb
 EOD
     end
   end
