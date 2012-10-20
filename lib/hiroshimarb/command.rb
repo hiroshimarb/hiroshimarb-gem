@@ -15,7 +15,11 @@ module Hiroshimarb
       end
 
       def find(command_name)
-        commands[command_name.to_sym].new
+        if command = commands[command_name.to_sym]
+          command.new
+        else
+          nil
+        end
       end
 
       def command_name

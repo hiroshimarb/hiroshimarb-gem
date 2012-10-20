@@ -7,11 +7,11 @@ require 'hiroshimarb/command'
 module Hiroshimarb::Commands
   class Open < Hiroshimarb::Command
 
-    default_key = 'hiroshimarb'
+    @@default_key = 'hiroshimarb'
 
     def call(*args)
       command = args.first
-      command ||= default_key
+      command ||= @@default_key
       Launchy.open key2url(command)
     end
 

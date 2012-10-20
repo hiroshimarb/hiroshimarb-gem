@@ -6,6 +6,7 @@ module Hiroshimarb
 
   class << self
     def execute(argv)
+      Commands.load_commands
       return help if argv.count == 0
 
       first = argv.shift
@@ -14,6 +15,10 @@ module Hiroshimarb
       else
         help
       end
+    end
+
+    def help(*argv)
+      Commands::Help.new.call *argv
     end
   end
 end
