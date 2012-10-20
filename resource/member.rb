@@ -96,4 +96,12 @@ Hiroshimarb::Member.define do
     profile ''
   end
 
+  member do
+    name 'Hiroyuki Oda'
+    github 'hrykoda'
+    twitter 'hrykoda'
+    website 'nill'
+    profile '仕事ではJavaを使っています。たまにPerlを使います。Rubyはこれから使ってみます。'
+  end
+
 end
