@@ -5,6 +5,7 @@ module Hiroshimarb
   extend CLI
 
   autoload(:Information, "hiroshimarb/information")
+  autoload(:Open, "hiroshimarb/open")
 
   class << self
     def execute(argv)
