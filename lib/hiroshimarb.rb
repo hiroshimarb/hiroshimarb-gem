@@ -1,26 +1,16 @@
 require "hiroshimarb/version"
-require 'hiroshimarb/cli'
 
 module Hiroshimarb
-  extend CLI
-
-  autoload(:Information, "hiroshimarb/information")
-  autoload(:Open, "hiroshimarb/open")
+  autoload(:Command, "hiroshimarb/command")
+  autoload(:Commands, "hiroshimarb/commands")
 
   class << self
     def execute(argv)
       return help if argv.count == 0
 
-      command = argv.shift
-      case command
-      when 'open'
-        open *argv
-      when 'info'
-        info
-      when 'member'
-        member
-      when 'event'
-        event
+      first = argv.shift
+      if command = Command.find(first)
+        command.call *argv
       else
         help
       end

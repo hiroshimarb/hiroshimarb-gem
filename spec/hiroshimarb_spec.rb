@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 require 'hiroshimarb'
+require 'launchy'
 
 describe Hiroshimarb do
   describe '.execute' do
@@ -8,7 +9,7 @@ describe Hiroshimarb do
       let(:argv) { ['open', 'hiroshimarb'] }
 
       it "open メソッドが呼ばれる" do
-        Hiroshimarb.should_receive(:open).with('hiroshimarb')
+        Launchy.should_receive(:open) { }
         subject
       end
     end
