@@ -104,4 +104,12 @@ Hiroshimarb::Member.define do
     profile '仕事ではJavaを使っています。たまにPerlを使います。Rubyはこれから使ってみます。'
   end
 
+  member do
+    name 'Yoshitake Takata'
+    github 'takata'
+    twitter 'takatayoshitake'
+    website 'http://www.takata.tk/'
+    profile '仕事は開発では無くRuby初心者ですがよろしく'
+  end
+
 end
