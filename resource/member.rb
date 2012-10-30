@@ -112,7 +112,7 @@ Hiroshimarb::Member.define do
     profile '仕事は開発では無くRuby初心者ですがよろしく'
   end
 
-　member do
+  member do
     name 'Makoto Henmi'
     github 'makowis'
     twitter 'mako_wis'
