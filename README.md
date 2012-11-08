@@ -54,3 +54,9 @@ Hiroshima.rb についての情報を表示します。
     $ hiroshimarb event
 
 Hiroshima.rb の次回のイベントについての情報を表示します。
+
+### aa コマンド
+
+    $ hiroshimarb aa
+
+Hiroshima.rb のアスキーアートを表示します。
