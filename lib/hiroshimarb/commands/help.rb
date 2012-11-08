@@ -17,6 +17,7 @@ Available commands:
   info    : disploy information of Hiroshimar.rb
   member  : display the member of Hiroshima.rb
   event   : display next event of Hiroshima.rb
+  aa      : display ascii art of Hiroshima.rb
 EOD
     end
   end
