@@ -1,5 +1,3 @@
-require 'hiroshimarb/commands/open.rb'
-
 module Hiroshimarb::Commands
   def self.load_commands
     commands_dir = File.join(File.dirname(__FILE__), "commands")
