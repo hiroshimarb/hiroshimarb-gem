@@ -13,8 +13,8 @@ module Hiroshimarb
       if command = Command.find(first)
         command.call *argv
       else
-        if first == 'asciiart'
-          command = Command.find('aa')
+        if first == 'aa'
+          command = Command.find('asciiart')
           command.call *argv
         else
           help

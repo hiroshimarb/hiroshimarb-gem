@@ -2,7 +2,7 @@
 require 'hiroshimarb/command'
 
 module Hiroshimarb::Commands
-  class Aa < Hiroshimarb::Command
+  class Asciiart < Hiroshimarb::Command
     def call(*args)
       puts <<EOD
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
