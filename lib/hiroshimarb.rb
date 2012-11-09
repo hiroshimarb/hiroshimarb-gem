@@ -13,7 +13,12 @@ module Hiroshimarb
       if command = Command.find(first)
         command.call *argv
       else
-        help
+        if first == 'asciiart'
+          command = Command.find('aa')
+          command.call *argv
+        else
+          help
+        end
       end
     end
 
