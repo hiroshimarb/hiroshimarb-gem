@@ -5,5 +5,10 @@
       $ hiroshimarb convert '今日は、いい天気ですね。'
 
   シナリオ: Hiroshima.rbについて
-    もし "hiroshimarb convert" を実行
-    ならば "広島弁に変換された文字列"という内容を含む
+    もし "hiroshimarb convert '今日は、いい天気ですね。'" を実行
+    ならば 以下の内容を表示:
+      """
+      [広島弁に変換]
+      今日は、いい天気じゃの。
+
+      """
