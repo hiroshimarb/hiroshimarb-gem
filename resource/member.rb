@@ -120,4 +120,12 @@ Hiroshimarb::Member.define do
     profile '岡山で何故かハーレムさんって呼ばれてます。Rubyはあんまり触ってないです。'
   end
 
+  member do
+    name 'Taichi Shindo'
+    github 's-taichan'
+    twitter 's_taichan'
+    website 'http://s-taichan.blogspot.jp/'
+    profile '東京で武者修行中の学生です。広島に帰省したときは暖かく迎えてください。'
+  end
+
 end

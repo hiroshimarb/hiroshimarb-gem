@@ -60,3 +60,11 @@ Hiroshima.rb の次回のイベントについての情報を表示します。
     $ hiroshimarb aa
 
 Hiroshima.rb のアスキーアートを表示します。
+
+
+### convert コマンド
+
+    $ hiroshimarb convert 'いい天気ですね'
+
+広島弁に変換された文字列を表示します。
+

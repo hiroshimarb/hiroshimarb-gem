@@ -18,6 +18,7 @@ Available commands:
   member  : display the member of Hiroshima.rb
   event   : display next event of Hiroshima.rb
   aa      : display ascii art of Hiroshima.rb
+  convert : display converted Hiroshima dialect of Hiroshima.rb
 EOD
     end
   end
