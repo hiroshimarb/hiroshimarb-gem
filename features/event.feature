@@ -4,6 +4,9 @@
 
      $ hiroshimarb event
 
+   背景:
+     前提 イベントの情報源は"features/resource/event.yaml"
+
    シナリオ: もっとも近いイベントについての表示
      もし "hiroshimarb event" を実行
      ならば 以下の内容を表示:

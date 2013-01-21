@@ -18,7 +18,11 @@ module Hiroshimarb
 
       def resource_file_path
         root = File.join(File.dirname(__FILE__), "..", "..")
-        File.join(root, "resource", "event.yaml")
+        File.join(root, filename)
+      end
+
+      def filename
+        ENV["resource"] || File.join("resource", "event.yaml")
       end
 
       def load_yaml

@@ -11,3 +11,7 @@ end
 ならば /^以下の内容を表示:$/ do |string|
   expect(all_stdout).to eq(string)
 end
+
+前提 /^イベントの情報源は"(.*?)"$/ do |filename|
+  ENV['resource'] = filename
+end
