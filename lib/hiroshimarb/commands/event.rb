@@ -1,31 +1,39 @@
 # -*- coding: utf-8 -*-
+require 'hiroshimarb/event'
+
 module Hiroshimarb::Commands
   class Event < Hiroshimarb::Command
+    WDAYS = %w{日 月 火 水 木 金 土}
+
     def call(*args)
       sub_command = args.first
       if sub_command == "all"
-        puts all
+        ::Hiroshimarb::Event.all.each do |event|
+          puts event_format(event)
+        end
       else
-        puts recent
+        puts event_format(::Hiroshimarb::Event.recent)
       end
     end
 
-    def recent
+    def event_format(event)
       <<EOD
-2012-12-01 (土) 14:00-18:00 広島Ruby勉強会 #026
+#{time_format(event)} #{event.title}
 
-  http://hiroshimarb.github.com/blog/2012/11/16/hiroshimarb-26/
+  #{event.url}
+
 EOD
     end
 
-    def all
-      rest = <<EOD
-2012-11-03 (土) 14:00-18:00 広島Ruby勉強会 #025
-
-  http://hiroshimarb.github.com/blog/2012/10/15/hiroshimarb-25/
-
-EOD
-      rest + recent
+    def time_format(event)
+      start = event.start_datetime
+      ent = event.end_datetime
+      wday = WDAYS[start.wday]
+      date = start.strftime("%Y-%m-%d")
+      format = '%H:%M'
+      start_time = start.strftime(format)
+      end_time = ent.strftime(format)
+      "#{date} (#{wday}) #{start_time}-#{end_time}"
     end
   end
 end
