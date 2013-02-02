@@ -127,5 +127,13 @@ Hiroshimarb::Member.define do
     website 'http://s-taichan.blogspot.jp/'
     profile '東京で武者修行中の学生です。広島に帰省したときは暖かく迎えてください。'
   end
+  
+  member do
+    name 'Anthony White'
+    github 'touni102'
+    twitter 'touni102'
+    website 'nill'
+    profile '広島市で英語教えてます。プログラミングは大学の専門でRubyをチャレンジしようと思います。'
+  end
 
 end
