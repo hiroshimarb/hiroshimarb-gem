@@ -2,6 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/hiroshimarb/hiroshimarb-gem.png)](http://travis-ci.org/hiroshimarb/hiroshimarb-gem)
 [![Code Climate](https://codeclimate.com/github/hiroshimarb/hiroshimarb-gem.png)](https://codeclimate.com/github/hiroshimarb/hiroshimarb-gem)
+[![Coverage Status](https://coveralls.io/repos/hiroshimarb/hiroshimarb-gem/badge.png?branch=master)](https://coveralls.io/r/hiroshimarb/hiroshimarb-gem)
 
 
 この gem は Hiroshima.rb が提供する gem です。
