@@ -25,14 +25,18 @@ module Hiroshimarb
         ENV["resource"] || File.join("resource", "event.yaml")
       end
 
+      def new_with_hash(hash)
+        event = Event.new
+        event.title = hash["title"]
+        event.url = hash["url"]
+        event.date_parse hash["date"]
+        event
+      end
+
       def load_yaml
         resource_file = resource_file_path
         events = YAML.parse_file(resource_file).to_ruby.map do |event_hash|
-          event = Event.new
-          event.title = event_hash["title"]
-          event.url = event_hash["url"]
-          event.date_parse event_hash["date"]
-          event
+          Event.new_with_hash event_hash
         end
         events.sort { |a,b| a.start_datetime <=> b.end_datetime }
       end
