@@ -14,6 +14,7 @@ Available commands:
           :    oc-h        - おしい広島県
           :    city        - 広島市
           :    pref        - 広島県
+          :    great-h     - すごい広島
   info    : disploy information of Hiroshimar.rb
   member  : display the member of Hiroshima.rb
   event   : display next event of Hiroshima.rb
