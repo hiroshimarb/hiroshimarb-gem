@@ -27,6 +27,8 @@ module Hiroshimarb::Commands
         'http://www.city.hiroshima.lg.jp'
       when 'pref'
         'http://www.pref.hiroshima.lg.jp'
+      when 'great-h'
+        'http://great-h.github.io/'
       end
     end
   end
