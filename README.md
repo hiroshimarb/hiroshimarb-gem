@@ -40,6 +40,9 @@
     <tr>
         <td>pref</td><td>広島県</td>
     </tr>
+    <tr>
+        <td>great-h</td><td>すごい広島</td>
+    </tr>
 </table>
 
 ### member コマンド

@@ -34,6 +34,9 @@ Show the Hiroshima.rb website in your web browser.
     <tr>
         <td>pref</td><td>Hiroshima prefecture</td>
     </tr>
+    <tr>
+        <td>great-h</td><td>Sugoi Hiroshima (sugoi = great)</td>
+    </tr>
 </table>
 
 ### member command
