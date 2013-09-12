@@ -10,6 +10,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{provide `hiroshimarb` command. hiroshimarb is Hiroshima.rb}
   gem.homepage      = "http://github.com/hiroshimarb/hiroshimarb-gem"
   gem.rubyforge_project = 'github'
+  gem.license      = 'MIT'
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
