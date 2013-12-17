@@ -136,4 +136,12 @@ Hiroshimarb::Member.define do
     profile '広島市で英語教えてます。プログラミングは大学の専門でRubyをチャレンジしようと思います。'
   end
 
+  member do
+    name 'Takahiro Nakaoku'
+    github 'kamera25'
+    twitter 'csc_kamera25'
+    website 'http://religion.indiesj.com/'
+    profile 'Hiroshima.rbの見習い。今後はmrubyを勉強したい。'
+  end
+
 end
