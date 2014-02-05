@@ -6,15 +6,15 @@ module Hiroshimarb
   describe Event do
     describe '.all' do
       subject { Event.all }
-      it { should have(11).items }
+      it { should have(12).items }
     end
 
     describe '.recent' do
       subject { Event.recent }
-      its(:title) { should eq('オープンセミナー2014@広島') }
+      its(:title) { should eq('Hiroshima.rb #036') }
       it '日付は2014年 2月1日' do
         date = subject.start_datetime
-        expect(date.strftime('%Y-%m-%d')).to eq('2014-02-01')
+        expect(date.strftime('%Y-%m-%d')).to eq('2014-02-20')
       end
     end
   end
