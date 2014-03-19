@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 require 'date'
 require 'yaml'
+require 'open-uri'
 
 module Hiroshimarb
   # イベントを表現するクラス
@@ -17,12 +18,7 @@ module Hiroshimarb
       end
 
       def resource_file_path
-        root = File.join(File.dirname(__FILE__), "..", "..")
-        File.join(root, filename)
-      end
-
-      def filename
-        ENV["resource"] || File.join("resource", "event.yaml")
+        ENV["resource"] || 'https://raw.github.com/hiroshimarb/hiroshimarb-gem/master/resource/event.yaml'
       end
 
       def new_with_hash(hash)
@@ -35,8 +31,12 @@ module Hiroshimarb
 
       def load_yaml
         resource_file = resource_file_path
-        events = YAML.parse_file(resource_file).to_ruby.map do |event_hash|
-          Event.new_with_hash event_hash
+        events = nil
+        open(resource_file) do |io|
+          events = YAML.parse(io.read).to_ruby.map do |event_hash|
+            Event.new_with_hash event_hash
+          end
+          events
         end
         events.sort { |a,b| a.start_datetime <=> b.end_datetime }
       end

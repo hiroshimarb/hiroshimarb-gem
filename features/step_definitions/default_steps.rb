@@ -13,5 +13,6 @@ end
 end
 
 前提 /^イベントの情報源は"(.*?)"$/ do |filename|
-  ENV['resource'] = filename
+  root_path = File.join(File.dirname(__FILE__),"..", "..")
+  ENV['resource'] = File.join(root_path, filename)
 end
