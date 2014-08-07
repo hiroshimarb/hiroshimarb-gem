@@ -144,4 +144,12 @@ Hiroshimarb::Member.define do
     profile 'Hiroshima.rbの見習い。今後はmrubyを勉強したい。'
   end
 
+  member do
+    name 'Kanji Hatamoto'
+    github 'kanjihtmt'
+    twitter 'kanjihtmt'
+    website 'example.com'
+    profile 'ぺちぱーです。来年からはRubyに移行しようと勉強中です。よろしくお願いします。'
+  end
+
 end
