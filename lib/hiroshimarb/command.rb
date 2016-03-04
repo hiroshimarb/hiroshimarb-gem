@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 module Hiroshimarb
 
   # コマンドを実装する際の基底クラス

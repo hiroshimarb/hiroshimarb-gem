@@ -4,4 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'coveralls', require: false
-gem 'json', '~> 1.7.7'
+gem 'json'
+gem 'rdf'
+gem 'rdf-vocab'
+gem 'json-ld'

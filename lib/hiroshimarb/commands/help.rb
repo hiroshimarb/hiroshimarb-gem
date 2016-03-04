@@ -16,6 +16,7 @@ Available commands:
           :    pref        - 広島県
           :    great-h     - すごい広島
   info    : disploy information of Hiroshimar.rb
+  rdf     : disploy information of Hiroshimar.rb in rdf(JSON-LD)
   member  : display the member of Hiroshima.rb
   event   : display next event of Hiroshima.rb
   aa      : display ascii art of Hiroshima.rb
